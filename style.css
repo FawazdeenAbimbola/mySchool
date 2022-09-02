@@ -1,0 +1,169 @@
+    *{
+        padding: 0;
+        margin:0;
+        font-family: poppins;
+    }
+/*****************HEADER**********************/
+    .site-header{
+        min-height: 100vh;
+        width:100%;
+        position: relative;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('assets/bg.jpeg');
+        background-position: center;
+        background-size: cover;
+    }
+/***********NAVBAR**********/
+    nav{
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-links{
+        flex:1;
+        overflow-x: hidden;
+        text-align: right;
+    }
+    .nav-links ul li{
+        display: inline-block;
+        padding: 8px 20px;
+        list-style-type: none;
+
+    }
+    .nav-links ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .nav-links ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .nav-links ul li a::after{
+        content: '';
+        width: 0%;
+        background-color: crimson;
+        height:2px;
+        display: block;
+        margin: auto;
+        transition: 0.3s;
+    }
+    .nav-links ul li a:hover:after{
+        content: '';
+        width: 100%;
+        background-color: crimson;
+        height:2px;
+        display: block;
+        margin: auto;
+    }
+    #logo {
+        font-size: 22px;
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+    }
+   .fa-graduation-cap{
+    color:rgb(211, 79, 105);
+   }
+
+   .text-box{
+    width:90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+   }
+   .text-box h1{
+    font-size: 62px;
+   }
+   .text-box p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color:#fff;
+   }
+   .text-box a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+   }
+   .text-box a:hover{
+    background-color: crimson;
+    border: 1px solid crimson;
+   }
+
+   #cancel{
+    display: none;
+   }
+   @media (min-width:800px) {
+    .nav-bars-responsive, #menu {
+        display: none;
+    }
+   }
+   @media (max-width: 800px) {
+    .text-box h1{
+        font-size: 25px;
+    }
+.nav-bars-responsive #cancel, #menu{display: block; font-size: 22px; color:#fff; cursor: pointer; margin: 30px;}
+    
+    .nav-links {
+        display: none;
+    }
+    /***RESPONSIVE NAVBAR****/
+   .nav-bars-responsive{
+    position: absolute;
+    width: 200px;
+    height:100vh;
+    background:crimson;
+    top:0;
+    right:0;
+    display: none;
+    z-index: 2;
+    text-align: left;
+   }     
+   .nav-bars-responsive ul{
+    padding: 30px;
+   }
+   .nav-bars-responsive ul li{
+    list-style-type: none;
+    
+   }
+   .nav-bars-responsive li a{
+    color: white;
+    font-size: 14px;
+    padding: 7px 10px;
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+   }
+   
+    }
+    .courses {
+        width: 90%;
+        margin: auto;
+        padding-top:100px;
+        text-align: center;
+    }
+    .row{
+
+        display: flex;
+        margin-top:5%;
+        justify-content: space-between;
+    }
+
+    .course-col{
+        flex-basis: 31%;
+        background-color: #fff3f3;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+    }
+   
+

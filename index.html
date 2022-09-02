@@ -5,9 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylehsheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>mySchool</title>
 </head>
 <body>
-    
+    <!-----------------HEADER----------------------->
+    <header class="site-header">
+        <nav>
+            <a href="index.html" id="logo"><i class="fa fa-graduation-cap" aria-hidden="true"></i>mySchool</a>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">ACADEMIC PROGRAMMES</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+
+            </div>
+        <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()" id="menu"></i>
+
+        <!-----------RESPONSIVE NAVBAR--------------->
+        <div class="nav-bars-responsive" id="navbarResponsive">
+            <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()" id="cancel"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">ACADEMIC PROGRAMMES</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+        </div>
+       
+        </nav>
+        <div class="text-box">
+            <h1>World's Fast-Rising University</h1>
+            <p>Impacting in students the essentials they need to know about the world in their respective fields</p>
+            <a href="">Visit Us to know More</a>
+        </div>
+    </header>
+
+    <section class="courses">
+        <h1>Courses We Offer</h1>
+        <p>At mySchool we offer the in-demand courses ranging from Engineering to Accounting.</p>
+        <div class="row">
+            <div class="course-col">
+                <h4>Arts</h4>
+                <p>English, French, History, International relations, Mass Communication, Music, e.t.c  </p>
+            </div>
+            <div class="course-col">
+                <h4>Business</h4>
+                <p>Accounting, Banking & Finance, Commerce, Business Administration, Human Resource, e.t.c  </p>
+            </div>
+            <div class="course-col">
+                <h4>Engineering</h4>
+                <p>Aeronautical, Chemical, Civil, Electrical, Electronics, Mechanical, Metallurgical, Water e.t.c  </p>
+            </div>
+        </div>
+    </section>
+
 </body>
+<script src="script.js"></script>
 </html>
